@@ -7,6 +7,9 @@
 
 :root {
   --clr-light-background: #fafafa;
+  --clr-mono1: #afafaf;
+  --clr-mono2: #e9ecef;
+  --clr-mono3: #343a40;
   --clr-dark-background: #15202b;
   --clr-accent-light: #168aad;
   --clr-primary: #184e77;
@@ -36,7 +39,7 @@ body {
 
 .resume-container .left-side {
   position: relative;
-  background: var(--clr-primary);
+  background: var(--clr-mono3);
   padding: 40px;
 }
 
@@ -67,7 +70,7 @@ body {
 }
 
 .profileText h2 {
-  color: white;
+  color: var(--clr-mono2);
   font: 1.5em;
   margin-top: 20px;
   text-transform: uppercase;
@@ -94,6 +97,7 @@ body {
   list-style: none;
   margin: 10px 0;
   cursor: pointer;
+  color: var(--clr-mono2);
 }
 
 .contactInfo ul li .icon {
@@ -103,14 +107,58 @@ body {
   color: var(--clr-accent-light);
 }
 .title {
-  color: white;
+  color: var(--clr-mono2);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+  color: var(--clr-mono2);
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.contactInfo.education h4:nth-child(2) {
+  color: var(--clr-mono2);
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.contactInfo.education h4 {
+  color: var(--clr-mono2);
+  font-weight: 300;
+}
+
+.contactInfo.languages .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: var(--clr-dark-background);
+  display: block;
+  margin-top: 5px;
+}
+
+.contactInfo.languages .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--clr-accent-light);
+}
+
+/* .devicon {
+  padding-top: 5px;
+  width: 370px;
+  background-color: var(--clr-mono2);
+} */
+
 .resume-container .right-side {
   position: relative;
-  background: var(--clr-secondary);
+  background: var(--clr-mono2);
   padding: 40px;
 }
