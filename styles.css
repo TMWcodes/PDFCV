@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica, sans-serif;
+}
+
+:root {
+  --clr-light-background: #fafafa;
+  --clr-dark-background: #15202b;
+  --clr-accent-light: #168aad;
+  --clr-primary: #184e77;
+  --clr-secondary: #34a0a4;
+  --clr-tertiary: #99d98c;
+}
+body {
+  background: var(--clr-light-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* .profile-picture {
+  background-image: url("img/alex-knight.jpg");
+  max-width: 35ch;
+} */
+.resume-container {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  background: var(--clr-dark-background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px red solid; */
+}
+
+.resume-container .left-side {
+  position: relative;
+  background: var(--clr-primary);
+  padding: 40px;
+}
+
+.resume-container .right-side {
+  position: relative;
+  background: var(--clr-secondary);
+  padding: 40px;
+}
