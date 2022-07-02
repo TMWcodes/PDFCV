@@ -22,18 +22,26 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  border: 2px red dashed;
 }
+
+/* @page {
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
+} */
 
 .resume-container {
   position: relative;
-  width: 100%;
-  max-width: 2000px;
-  min-height: 1000px;
-  margin: 50px;
+  /* width: 100%; */
+  /* max-width: 2000px;
+  min-height: 1000px; */
+  /* margin: 50px; */
+
+  /* margin: 27mm 16mm 27mm 16mm; */
   background: var(--clr-dark-background);
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 35px 55px rgba(0, 0, 0, 0.15); */
   /* border: 1px red solid; */
 }
 
@@ -182,6 +190,11 @@ p {
   margin-bottom: 10px;
 }
 
+.quote {
+  font-style: italic;
+  /* color: #168aad; */
+}
+
 .about .box {
   display: flex;
   flex-direction: row;
@@ -197,4 +210,30 @@ p {
   text-transform: uppercase;
   color: var(--clr-mono3);
   font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  font-weight: 600;
+}
+
+.about-skills {
+  position: relative;
+  float: left;
+  width: 45%;
+}
+
+.about-skills .title2 {
+  color: var(--clr-accent-light);
+}
+
+.about-abilities {
+  position: relative;
+  float: right;
+  width: 45%;
+}
+
+.about-abilities .title2 {
+  color: var(--clr-accent-light);
 }
