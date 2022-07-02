@@ -22,7 +22,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  border: 2px red dashed;
+  width: 210mm;
+  /* border: 2px red dashed; */
 }
 
 /* @page {
@@ -88,14 +89,18 @@ body {
 }
 
 .profileText h2 span {
-  font-size: 0.8em;
-  font-weight: 300;
+  font-size: 0.7em;
+  font-weight: 100;
 }
 
 .contactInfo {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
+.contactInfo .text {
+  font-size: 12px;
+  font-weight: 100;
+}
 .contactInfo ul {
   position: relative;
 }
@@ -159,6 +164,16 @@ body {
   background: var(--clr-accent-light);
 }
 
+.contactInfo.languages .text {
+  font-weight: 400;
+  font-size: 15px;
+  /* color: red; */
+}
+
+.contactInfo.languages .otherSystems {
+  font-size: 12px;
+  /* color: red; */
+}
 /* .devicon {
   padding-top: 5px;
   width: 370px;
@@ -172,7 +187,7 @@ body {
 }
 
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 about:last-child {
@@ -186,23 +201,33 @@ about:last-child {
   margin-bottom: 10px;
 }
 
-p {
+.title3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.quote {
-  font-style: italic;
-  /* color: #168aad; */
+.about-abilities .title3 {
+  color: var(--clr-accent-light);
+  padding-top: 30px;
+}
+
+.about-skills .title3 {
+  color: var(--clr-accent-light);
+  padding-top: 30px;
+}
+p {
+  margin-bottom: 10px;
 }
 
 .about .box {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .about .box .year_company {
-  min-width: 150px;
+  min-width: 100px;
   color: #168aad;
 }
 
@@ -222,18 +247,29 @@ p {
   position: relative;
   float: left;
   width: 45%;
+  color: var(--clr-light-background);
 }
 
-.about-skills .title2 {
-  color: var(--clr-accent-light);
+.about-skills.about-skills li {
+  padding: 5px;
+  font-weight: 300;
 }
 
 .about-abilities {
   position: relative;
   float: right;
   width: 45%;
+  color: var(--clr-light-background);
 }
 
-.about-abilities .title2 {
-  color: var(--clr-accent-light);
+.about-abilities li {
+  padding: 5px;
+  font-weight: 300;
+}
+
+p.quote {
+  font-style: italic;
+  padding-top: 5px;
+  font-size: small;
+  /* color: #168aad; */
 }
