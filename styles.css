@@ -21,8 +21,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  /* width: 210mm; */
+  height: 297mm;
+  /* min-height: 100vh; */
+  /* width: 210mm;
+  height: 297mm; */
   /* border: 2px red dashed; */
 }
 
@@ -32,6 +34,8 @@ body {
 } */
 
 .resume-container {
+  width: 210mm;
+  height: 297mm;
   position: relative;
   /* width: 100%; */
   /* max-width: 2000px;
@@ -49,7 +53,7 @@ body {
 .resume-container .left-side {
   position: relative;
   background: var(--clr-mono3);
-  padding: 40px;
+  padding: 20px;
 }
 
 .profileText {
@@ -57,7 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 11px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -94,7 +98,9 @@ body {
 }
 
 .contactInfo {
-  padding-top: 20px;
+  /* position: relative;
+  align-items: center; */
+  padding-top: 10px;
 }
 
 .contactInfo .text {
@@ -108,7 +114,7 @@ body {
 .contactInfo ul li {
   position: relative;
   list-style: none;
-  margin: 10px 0;
+  margin: 5px 0;
   cursor: pointer;
   color: var(--clr-mono2);
 }
@@ -183,11 +189,13 @@ body {
 .resume-container .right-side {
   position: relative;
   background: var(--clr-mono2);
-  padding: 40px;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
 .about {
-  margin-bottom: 0px;
+  margin-bottom: px;
 }
 
 about:last-child {
@@ -209,12 +217,12 @@ about:last-child {
 
 .about-abilities .title3 {
   color: var(--clr-accent-light);
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .about-skills .title3 {
   color: var(--clr-accent-light);
-  padding-top: 30px;
+  padding-top: 10px;
 }
 p {
   margin-bottom: 10px;
@@ -251,7 +259,7 @@ p {
 }
 
 .about-skills.about-skills li {
-  padding: 5px;
+  padding: 2px;
   font-weight: 300;
 }
 
@@ -263,7 +271,7 @@ p {
 }
 
 .about-abilities li {
-  padding: 5px;
+  padding: 2px;
   font-weight: 300;
 }
 
