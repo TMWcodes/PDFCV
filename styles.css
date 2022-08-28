@@ -9,19 +9,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.resume-container {
-  width: 210mm;
-  height: 297mm;
-  position: relative;
-  background-color: #fafafa;
-  /* margin-bottom: 20px; */
   margin: 5px;
   padding: 5px;
 }
+.resume-container {
+  width: 210mm;
+  height: 290mm;
+  position: relative;
+  background-color: #fafafa;
+
+  /* margin-bottom: 20px; */
+}
+
+.resume-container li {
+  margin-left: 30px;
+  padding: 2px;
+}
+h5 {
+  margin-left: 10px;
+}
+
+.education h5 {
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+}
 
 hr {
-  border-top: 1px solid rgb(133, 158, 182);
+  border-top: 1px solid rgb(119, 111, 0);
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -30,18 +46,27 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: 2px;
 }
-
-/* h4 {
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-} */
 
 .name {
   text-align: center;
+}
+
+.contactInfo li {
+  display: inline;
+  margin: 2px;
+}
+
+.education li {
+  display: inline;
+}
+
+.about p {
+  padding: 5px;
+}
+.quote {
+  margin-left: 10px;
 }
 
 .languages li {
@@ -61,4 +86,16 @@ h3 {
 
 .box {
   margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgb(0, 132, 255);
 }
